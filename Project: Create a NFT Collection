@@ -23,19 +23,19 @@ function mintNFT (_name, _age, _grade, _section, _school) {
       "school": _school
    }
    NFTs.push(NFT);
-   console.log("Minyed: " + _name);
+   console.log("Minted: " + _name);
 }
 
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
 function listNFTs () {
-   for(let i = 0; i , NFTs.length; i++) {
+   for(let i = 0; i < NFTs.length; i++) {
       console.log("\nID: \t\t" + (i + 1));
       console.log("Name: \t\t" + NFTs[i].name);
-      console.log("Age \t\t" + NFTs[i].age);
-      console.log("Grade \t\t" + NFTs[i].grade);
-      console.log("Section \t\t" + NFTs[i].section);
-      console.log("School \t\t" + NFTs[i].school);
+      console.log("Age: \t\t" + NFTs[i].age);
+      console.log("Grade: \t\t" + NFTs[i].grade);
+      console.log("Section: \t" + NFTs[i].section);
+      console.log("School: \t" + NFTs[i].school);
    }
 }
 
@@ -47,8 +47,12 @@ function getTotalSupply() {
 // call your functions below this line
 mintNFT("Allysa", "18", "12", "ABM S1-1", "APEC");
 mintNFT("Rochelle", "18", "12", "ABM S1-1", "APEC");
-mintNFT("Paulyn", "18", "12", "ABM S1-1", "APEC");
+mintNFT("Paulyn", "17", "12", "ABM S1-1", "APEC");
 mintNFT("Abbey", "20", "12", "ABM S1-1", "APEC");
-mintNFT("Arvin", "18", "12", "ABM S1-1", "APEC");
+mintNFT("Arvin", "17", "12", "ABM S1-1", "APEC");
+mintNFT("Danielle", "17", "12", "ABM S1-1", "APEC");
+mintNFT("Rhea", "18", "12", "ABM S1-1", "APEC");
+
 listNFTs();
 getTotalSupply();
+console.log("Total: " + "7");
