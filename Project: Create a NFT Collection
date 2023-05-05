@@ -55,4 +55,3 @@ mintNFT("Rhea", "18", "12", "ABM S1-1", "APEC");
 
 listNFTs();
 getTotalSupply();
-console.log("Total: " + "7");
